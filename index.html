@@ -2,35 +2,95 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Професійне вебпортфоліо — Вступна частина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє професійне вебпортфоліо</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Вступний блок (Hero section) -->
-    <header class="hero-section">
-        <h1>Андрій Скарбек</h1>
-        <p class="profession-desc">Майбутній ІТ-фахівець, розробник та студент комп'ютерних систем</p>
-        <blockquote class="motivation-text">
-            «Технології — це інструмент для створення майбутнього, а якісний код є основою інженерної досконалості.»
-        </blockquote>
+
+    <!-- Навігаційне меню (Списки + Гіперпосилання) -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#skills">Навички</a></li>
+            <li><a href="#interests">Інтереси</a></li>
+            <li><a href="#goals">Цілі</a></li>
+        </ul>
+    </nav>
+
+    <!-- Презентаційна секція (Hero Section з фото та основними тегами) -->
+    <header id="about" class="hero-card">
+        <div class="profile-photo-wrapper">
+            <img src="https://img.magnific.com/free-photo/expressive-redhead-bearded-man_176420-32277.jpg?semt=ais_hybrid&w=740&q=80" alt="Фото розробника" class="profile-photo">
+        </div>
+        <div class="profile-info">
+            <h1>Андрій Скарбек</h1>
+            <p class="subtitle">Студент / Майбутній ІТ-фахівець та веброзробник</p>
+            
+            <p class="bio-text">
+                Займаюся вивченням алгоритмів, архітектури комп'ютерних систем, розробкою програмного забезпечення та проєктуванням вебінтерфейсів.
+            </p>
+
+            <!-- Експрес-список ключових стеків -->
+            <ul class="badge-list">
+                <li><span class="check-mark">✓</span> HTML5 & CSS3</li>
+                <li><span class="check-mark">✓</span> C++ & Python</li>
+                <li><span class="check-mark">✓</span> Git & GitHub</li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Інформаційні блоки -->
-    <main class="info-container">
-        <section class="info-block">
-            <h2>Про мене</h2>
-            <p>Цілеспрямований фахівець, який активно вивчає сучасні технології, веброзробку, алгоритми та системне програмування.</p>
+    <main class="content-container">
+
+        <!-- Розділ "Професійні навички" -->
+        <section id="skills" class="info-card">
+            <h2>Професійні навички</h2>
+            <div class="skills-grid">
+                <div class="skills-group">
+                    <h3>Технічні навички (Hard Skills)</h3>
+                    <ul class="custom-list">
+                        <li>Мови програмування: C++, Python</li>
+                        <li>Вебтехнології: HTML5, CSS3 (Flexbox/Grid)</li>
+                        <li>Системи контролю версій: Git, GitHub</li>
+                        <li>Бази даних та моделювання систем</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3>Гнучкі навички (Soft Skills)</h3>
+                    <ul class="custom-list">
+                        <li>Аналітичне та системне мислення</li>
+                        <li>Розв'язання складних інженерних задач</li>
+                        <li>Самостійність та робота з технічною документацією</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="info-block">
-            <h2>Професійна мета</h2>
-            <p>Створення ефективних програмних продуктів, опанування передових фреймворків та реалізація складних інженерних проєктів.</p>
+        <!-- Розділ "Професійні інтереси" -->
+        <section id="interests" class="info-card">
+            <h2>Професійні інтереси</h2>
+            <ul class="custom-list">
+                <li>Апаратне забезпечення та конфігурація ПК</li>
+                <li>Системи віртуалізації та контейнеризації (Docker, VirtualBox)</li>
+                <li>Розробка користувацьких інтерфейсів (UI/UX) та адаптивна верстка</li>
+            </ul>
         </section>
 
-        <section class="info-block">
-            <h2>Ключові інтереси</h2>
-            <p>Програмування на C++ та Python, проєктування баз даних, апаратне забезпечення та вебдизайн на базі HTML5 і CSS3.</p>
+        <!-- Розділ "План розвитку / Цілі" -->
+        <section id="goals" class="info-card">
+            <h2>План професійного розвитку</h2>
+            <ol class="steps-list">
+                <li>Глибоке опанування сучасних JavaScript-фреймворків.</li>
+                <li>Створення та публікація власних pet-проєктів на GitHub Pages.</li>
+                <li>Участь у практичних командних розробках та інженерних хакатонах.</li>
+            </ol>
         </section>
+
     </main>
+
+    <footer>
+        <p>&copy; 2026 Андрій Скарбек. Наскрізний проєкт портфоліо.</p>
+    </footer>
+
 </body>
 </html>
