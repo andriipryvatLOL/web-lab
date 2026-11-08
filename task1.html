@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання</title>
+    <style>
+        /* Фон */
+        body {
+            background-color: #fff;
+            background-image: 
+                linear-gradient(45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(-45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #e0e0e0 75%), 
+                linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Загальні стилі для всіх блоків */
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        /* Синій блок */
+        .blue {
+            background-color: blue;
+            top: 12px;
+            left: 12px;
+        }
+
+        /* Червоний блок */
+        .red {
+            background-color: red;
+            top: 112px;
+            left: 112px;
+        }
+
+        /* Жовтий блок */
+        .yellow {
+            background-color: yellow;
+            top: 212px;
+            left: 212px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box yellow"></div>
+
+</body>
+</html>
