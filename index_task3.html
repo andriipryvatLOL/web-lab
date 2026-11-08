@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Будиночок</title>
+    <style>
+        body {
+            background-color: #fff;
+            background-image: 
+                linear-gradient(45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(-45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #e0e0e0 75%), 
+                linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+            height: 100vh;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        /* Дах */
+        .roof {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 80px solid rgb(239, 7, 7);
+            z-index: 2;
+        }
+
+        /* Основна стіна будинку */
+        .walls {
+            position: absolute;
+            top: 80px;
+            left: 90px;
+            width: 120px;
+            height: 80px;
+            background-color: #d2b48c;
+            z-index: 1;
+        }
+
+        /* Двері */
+        .door {
+            position: absolute;
+            top: 110px;
+            left: 160px;
+            width: 30px;
+            height: 50px;
+            background-color: #8b4513;
+            z-index: 3;
+        }
+
+        /* Вікно */
+        .window {
+            position: absolute;
+            background-color: rgb(11, 186, 255);
+            width: 50px;
+            height: 40px;
+            top: 110px;
+            left: 100px;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="roof"></div>
+        <div class="walls"></div>
+        <div class="door"></div>
+        <div class="window"></div>
+    </div>
+
+</body>
+</html>
